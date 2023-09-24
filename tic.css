@@ -1,0 +1,75 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contetn h1{
+    font-size: 3rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content{
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+#tictac{
+    min-width: 200px;
+    max-width: 200px;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    columns: 3;
+    column-gap: 0px;
+   
+}
+.grid{
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    color: aliceblue;
+    background-color: skyblue;
+    padding: 10px;
+    box-shadow: 0px 0px 3px black;
+    cursor: pointer;
+}
+
+#rowone_column-one,#rowtwo_column-one,#rowthree_column-one{
+border-left: none;
+}
+#rowtwo_column-three,#rowone_column-three,#rowthree_column-three{
+    border-right: none;
+}
+#rowthree_column-one,#rowthree_column-two,#rowthree_column-three{
+    border-bottom: none;
+}
+#reset{
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    color: aliceblue;
+    background-color: blue;
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#reset::active{
+    transition: transform 100ms ease;
+    transform: scale(0.8);
+    -moz-transform: transform 100ms ease;
+    -moz-transform: scale(0.8);
+    -ms-transition: transform 100ms ease;
+    -ms-transform: scale(0.8);
+}
+#winner{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    margin-top: 30px;
+    color: orange;
+    visibility: hidden;
+}
+#isWinner{
+    color:red;
+}
